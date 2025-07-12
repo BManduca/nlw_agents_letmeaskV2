@@ -1,11 +1,10 @@
-# Projeto LetMeAsk - NLW Agents
+# Projeto LetMeAsk - NLW Agents - Server
 
 ## Objetivo
 
 - Contruir uma aplicação full-stack com inspiração no LetMeAsk, projeto desenvolvido na NLW Together.
 
 ## Tecnologias
-
 - Node.js com **TypeScript nativo** (experimental strip types).
 - PostgreSQL com extensão **pgvector** para vetores.
 - Fastify - **Framework** web para Node.js rápido, leve e eficiente.
