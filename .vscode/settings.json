@@ -6,7 +6,7 @@
 	"biome.enable": true,
 	"biome.lint.enable": true,
 	"biome.format.enable": true,
-	"biome.server.path": "./node_modules/.bin/biome", // 👈 ESSENCIAL
+	"biome.server.path": "./node_modules/.bin/biome",
 	"editor.codeActionsOnSave": {
 		"source.fixAll.biome": "explicit",
 		"source.organizeImports.biome": "explicit"
