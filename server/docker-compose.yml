@@ -9,4 +9,6 @@ services:
       # redirecionando a porta 5432 da minha maquina para 5432 do docker
       - "5432:5432"
     volumes:
+      # jogando o arquivo setup.sql prensente no docker para dentro da pasta
+      # docker-entrypoint-initdb.d do container do pgvector
       - ./docker/setup.sql:/docker-entrypoint-initdb.d/setup.sql
