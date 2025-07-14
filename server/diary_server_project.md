@@ -260,7 +260,7 @@
 
 ## Drizzle-kit
 
-- Ferramenta oficial do Drizzle ORM usada para gerenciar o esquema do banco de dados, ou seja, é a CLIR (Command Line Interface) do Drizzle ORM.
+- Ferramenta oficial do Drizzle ORM usada para gerenciar o esquema do banco de dados, ou seja, é a CLI (Command Line Interface) do Drizzle ORM.
 - Principais funcionalidades:
   - Gerar migrações automaticamente a partir dos seus arquivos de schema TypeScript
   - Rodar migrações no banco de dados
@@ -291,5 +291,4 @@
 ## Drizzle-seed
 - Pacote para realizar o 'seed' através do drizzle no banco de dados
 - Seed é nada mais que um arquivo que realiza uma pré-população com dados fictícios no banco de dados
-
-<!-- parado aos 58 minutos -->
+- Executar: npm run db:seed

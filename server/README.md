@@ -1,31 +1,95 @@
-# Projeto LetMeAsk - NLW Agents - Server
+# LetMeAsk - Server 🚀
 
-## Objetivo
+Projeto desenvolvido por **Brunno Manduca** durante a **NLW Agents** da Rocketseat.
 
-- Contruir uma API eficiente e robusta para realizar comunicação e disponibilizar todos os dados para o front-end.
+## ✨ Sobre o Projeto
 
-## Tecnologias Back-end
-- Node.js com **TypeScript nativo** (experimental strip types).
-- PostgreSQL com extensão **pgvector** para vetores.
-- Fastify - **Framework** web para Node.js rápido, leve e eficiente.
-- Zod - Biblioteca de **validação** de dados baseda em TypeScript-first schemas
-- Docker - Plataforma que permite **empacotar**, **distribuir** e **executar** a aplicação de forma isolada
-- Drizzle ORM - É um **ORM** moderno para TypeScript/JavaScript com foco em operações em bancos
-- Biome - Ferramenta com foco em **Lint** e **formatação** de código
+API robusta, eficiente e moderna para gerenciamento de salas, construída com foco em boas práticas, performance e DX.
 
-## Arquitetura
-- Esta parte do projeto tem uma arquitetura toda modular, com:
-  * Separação das responsabildiades através de rotas, schemas e conexões com banco.
-  * Validaçãos dos schemas através do Zod para type safety
-  * OPE type-safe com Drizzle para operações em banco de dados
-  * Validação das variáveis de ambiente centralizadas
+---
 
-## Setup e Configuração
-### Pré-requisitos
-  * Node.js **(versão com suporte para --experimental-strip-types)**
-  * Docker e Docker Compose
+## 🛠️ Tecnologias & Bibliotecas
 
-## Scripts
+- **Node.js** (TypeScript nativo)
+- **Fastify** - Framework web rápido e leve
+- **Zod** & **fastify-type-provider-zod** - Validação de dados e schemas tipados
+- **Drizzle ORM** & **Drizzle Kit** - ORM moderno e CLI para migrações
+- **PostgreSQL** com extensão **pgvector** - Banco de dados relacional e busca vetorial
+- **Docker** - Ambientes isolados e reprodutíveis
+- **Biome** & **Ultracite** - Lint, formatação e análise de código
+- **Drizzle-seed** - População inicial do banco de dados
 
-## Endpoints
+---
 
+## 🏗️ Padrões & Arquitetura
+
+- **TypeScript nativo** (sem build, usando suporte do Node.js 20+)
+- **Validação centralizada** com Zod
+- **ORM tipado** (Drizzle) para queries seguras
+- **Migrations automáticas** e versionadas
+- **Ambiente isolado** via Docker
+- **Lint e formatação** padronizados com Biome + Ultracite
+
+---
+
+## ⚡ Setup Rápido
+
+1. **Clone o repositório**
+   ```bash
+   git clone <repo-url>
+   cd server
+   ```
+
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
+
+3. **Configure o ambiente**
+   - Crie um arquivo `.env` com:
+     ```
+     PORT=3333
+     DATABASE_URL=postgresql://{user}:{password}@localhost:{PORT}/{DB}
+     ```
+   - As informções entre {} acima, serão as mesmas informações cadastradas no arquivo docker-compose
+
+4. **Suba o banco de dados com Docker**
+   ```bash
+   docker compose up -d
+   ```
+
+5. **Rode as migrations**
+   ```bash
+   npx drizzle-kit migrate
+   ```
+
+6. **Popule o banco (opcional)**
+   ```bash
+   npm run db:seed
+   ```
+
+7. **Inicie o servidor**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## ⚙️ Scripts Úteis
+
+- `npm run dev` — Inicia o servidor em modo desenvolvimento
+- `npm start` — Inicia o servidor em produção
+- `npm run db:seed` — Popula o banco com dados fictícios
+- `npx drizzle-kit migrate` — Executa as migrations
+- `npx drizzle-kit generate` — Gera novas migrations
+- `npx @biomejs/biome check --write` — Lint, formatação e organização de imports
+
+---
+
+## 📝 Observações
+
+- Requer **Node.js 20+** (suporte nativo a TypeScript)
+- Banco de dados padrão: **PostgreSQL** (porta 5432)
+- Extensão **pgvector** já configurada via Docker
+
+--- 
