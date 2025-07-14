@@ -86,6 +86,32 @@ API robusta, eficiente e moderna para gerenciamento de salas, construída com fo
 
 ---
 
+## 🗂️ Estrutura do Projeto
+
+```
+server/
+  ├─ docker/
+  │   └─ setup.sql
+  ├─ src/
+  │   ├─ db/
+  │   │   ├─ connection.ts
+  │   │   ├─ migrations/
+  │   │   ├─ schema/
+  │   │   └─ seed.ts
+  │   ├─ env.ts
+  │   ├─ http/
+  │   │   └─ routes/
+  │   │       └─ get-rooms.ts
+  │   └─ server.ts
+  ├─ docker-compose.yml
+  ├─ drizzle.config.ts
+  ├─ package.json
+  ├─ tsconfig.json
+  └─ README.md
+```
+
+--- 
+
 ## 📝 Observações
 
 - Requer **Node.js 20+** (suporte nativo a TypeScript)
