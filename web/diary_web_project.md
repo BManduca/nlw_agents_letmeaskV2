@@ -47,5 +47,7 @@
 
 
 <!-- https://gist.github.com/sidneyroberto/5f0b837c2d27f791fc494c164d2a7d74 -->
+<!-- https://github.com/rocketseat-education/nlw-agents-aulas-server -->
+<!-- https://github.com/rocketseat-education/nlw-agents-aulas-web -->
 
 <!-- https://www.youtube.com/watch?v=pynRw8RzqcQ -->
