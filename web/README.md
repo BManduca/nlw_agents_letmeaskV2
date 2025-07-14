@@ -82,6 +82,34 @@ LetMeAsk é uma aplicação web moderna para criação e participação em salas
 
 ---
 
+## 🔗 Backend
+
+Este projeto consome uma API backend que deve estar rodando na porta **3333** (`http://localhost:3333`).
+
+> **Certifique-se de que o backend está devidamente configurado e em execução antes de iniciar o frontend.**
+
+---
+
+
+## 🗂️ Estrutura do Projeto
+
+```
+web/
+├── src/
+│   ├── app.tsx           # Componente principal da aplicação
+│   ├── main.tsx          # Ponto de entrada do React
+│   ├── index.css         # Estilos globais (Tailwind)
+│   ├── components/       # Componentes reutilizáveis
+│   ├── pages/            # Páginas principais (rotas)
+│   └── lib/              # Utilitários e helpers
+├── public/               # Arquivos estáticos (se houver)
+├── package.json          # Dependências e scripts
+├── vite.config.ts        # Configuração do Vite
+└── README.md             # Documentação do projeto
+```
+
+---
+
 ## 💡 Observações
 
 - O projeto utiliza padrões modernos de frontend e segue boas práticas de acessibilidade e performance.
