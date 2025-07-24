@@ -9,6 +9,13 @@
 ## [Shadcn/ui](https://ui.shadcn.com/)
 - Biblioteca de componentes de interface (UI) construída sobre o Radix UI e estilizada com Tailwind CSS, voltada para aplicações modernas em React (especialmente com Next.js).
 - A Biblioteca oferece componentes prontos, acessíveis e altamente personalizáveis, como botões, menus, modais, inputs...
+    ### Componentes utilizados
+    1. [Card]('https://ui.shadcn.com/docs/components/card')
+       * instalação: npx shadcn@latest add card
+       * Construa cartões de maneira agil, com Header, Content e Footer.
+    2. [Badge]('https://ui.shadcn.com/docs/components/badge')
+       * instalação: npx shadcn@latest add badge.
+       * Exiba um botão, um componente ou algo do gênero literalmente como uma Badge(emblema).
 
 ## [Dark/Light mode](https://ui.shadcn.com/docs/dark-mode/vite) 
 - Documentação para implementar Dark/light mode via [shadcn/ui](https://ui.shadcn.com/) em um projeto vite + react.
