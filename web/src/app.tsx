@@ -20,7 +20,7 @@ export function App() {
             <Routes>
               {/* rota principal index */}
               <Route element={<CreateRoom />} index />
-              <Route element={<Room />} path="/room/:roomID" />
+              <Route element={<Room />} path="/room/:roomId" />
             </Routes>
           </div>
         </BrowserRouter>

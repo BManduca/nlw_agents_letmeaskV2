@@ -51,6 +51,14 @@
    * **Mutations**: Gerenciamento de operações de escrita(POST, PUT, DELETE)com feedback de carregamento, erro ou sucesso.
    * **Sincronização entre componentes**: Compartilhar os dados buscados entre múltiplos componentes sem duplicar as requisições.
    * **Paginação e infinitas requisições**: Suporte nativo para paginação ou scroll infinito.
+  
+## [Zod]('https://zod.dev/')
+* Validação TypeScript-first Schema com inferência de tipo estático.
+* instalação: npm i zod
+
+## hookform/resolvers
+* Biblioteca de integração do react-hook-form com o zod e com outras bibliotecas
+* instalação: npm i @hookform/resolvers
 
 
 <!-- https://gist.github.com/sidneyroberto/5f0b837c2d27f791fc494c164d2a7d74 -->
