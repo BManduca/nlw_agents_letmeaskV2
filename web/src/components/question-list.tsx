@@ -5,8 +5,8 @@ interface QuestionListProps {
   roomId: string
 }
 
-export function QuestionList() {
-  const { data } = useRoomQuestions()
+export function QuestionList(props: QuestionListProps) {
+  const { data } = useRoomQuestions(props.roomId)
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -15,13 +15,9 @@ export function QuestionList() {
         </h2>
       </div>
 
-      <QuestionItem
-        question={{
-          id: '1',
-          question: 'Pergunta 1',
-          createdAt: new Date().toISOString(),
-        }}
-      />
+      {data?.map((question) => {
+        return <QuestionItem key={question.id} question={question} />
+      })}
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ModeToggle } from '@/components/mode-toggle'
 import { ThemeProvider } from '@/components/theme-provider'
 import { CreateRoom } from './pages/create-room'
+import { RecordRoomAudio } from './pages/record-room-audio'
 import { Room } from './pages/room'
 
 const queryClient = new QueryClient()
@@ -21,6 +22,7 @@ export function App() {
               {/* rota principal index */}
               <Route element={<CreateRoom />} index />
               <Route element={<Room />} path="/room/:roomId" />
+              <Route element={<RecordRoomAudio />} path="/room/:roomId/audio" />
             </Routes>
           </div>
         </BrowserRouter>

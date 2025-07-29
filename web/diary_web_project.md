@@ -60,6 +60,18 @@
 * Biblioteca de integração do react-hook-form com o zod e com outras bibliotecas
 * instalação: npm i @hookform/resolvers
 
+## Pacote dom-speech-recognition
+* Pacote do NPM que tem toda a tipagem para o TypeScript entender que existe essa a API MediaRecorder dentro do nosso navegador
+
+## Rota de gravação de audio (/rooms/roomId/audio)
+* A rota vai transcrever o aúdio usando o Gemini(api)
+* Posteriormente iremos 'pegar' esse aúdio e alimentar nosso banco de dados, fazendo a conversão do aúdio para uma representação semântica do mesmo usando um algoritmo de embbedings
+
+## [Tabler Icons](https://tabler.io/icons)
+* instalação: ```npm i @tabler/icons```
+* Lib de ícone gratuitos e de código aberto, para ajudar no visual do site, deixando o mesmo minimalista e ao mesmo tempo visualmente atraente.
+
+<!-- 14:25 -->
 
 <!-- https://gist.github.com/sidneyroberto/5f0b837c2d27f791fc494c164d2a7d74 -->
 <!-- https://github.com/rocketseat-education/nlw-agents-aulas-server -->
