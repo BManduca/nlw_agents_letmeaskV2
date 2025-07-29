@@ -292,3 +292,7 @@
 - Pacote para realizar o 'seed' através do drizzle no banco de dados
 - Seed é nada mais que um arquivo que realiza uma pré-população com dados fictícios no banco de dados
 - Executar: npm run db:seed
+
+
+## SDK Gemini
+* Instalação: ```npm i @google/genai```
